@@ -32,6 +32,6 @@ steps:
 - task: CopyFiles@2
   inputs:
     Contents: '**'
-    TargetFolder: '$(Build.Repository.LocalPath)\TestCD\Builds'
+    TargetFolder: '$(Build.SourcesDirectory)/Builds/lucentapp.ps1'
     CleanTargetFolder: true
     OverWrite: true
