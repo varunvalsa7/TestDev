@@ -2,7 +2,7 @@
 - task: CopyFiles@2
   inputs:
     Contents: '**'
-    TargetFolder: '/TestCD/Builds'
+    TargetFolder: 'Builds'
     CleanTargetFolder: true
     OverWrite: true
 # Build and test ASP.NET Core projects targeting the full .NET Framework.
