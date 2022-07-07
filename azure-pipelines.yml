@@ -31,4 +31,4 @@ steps:
 
 - task: PowerShell@2
   inputs:
-    filePath: '$(Build.SourcesDirectory)/A1/bin/powershell'
+    filePath: '$(Build.SourcesDirectory)/A1/bin/powershell/Add-ApplicationCapabilities.ps1'
