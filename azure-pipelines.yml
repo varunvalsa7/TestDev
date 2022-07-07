@@ -1,10 +1,4 @@
 # ASP.NET Core (.NET Framework)
-- task: CopyFiles@2
-  inputs:
-    Contents: '**'
-    TargetFolder: '$(Build.Repository.LocalPath)\TestCD'
-    CleanTargetFolder: true
-    OverWrite: true
 
 trigger:
 - main
@@ -35,3 +29,9 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+- task: CopyFiles@2
+  inputs:
+    Contents: '**'
+    TargetFolder: '$(Build.Repository.LocalPath)\TestCD\Builds'
+    CleanTargetFolder: true
+    OverWrite: true
