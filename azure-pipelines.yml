@@ -29,9 +29,4 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
-- task: CopyFiles@2
-  inputs:
-    Contents: '**'
-    TargetFolder: '$(Build.SourcesDirectory)/A1/bin'
-    CleanTargetFolder: true
-    OverWrite: true
+
