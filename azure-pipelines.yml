@@ -32,6 +32,6 @@ steps:
 - task: CopyFiles@2
   inputs:
     Contents: '**'
-    TargetFolder: '$(Build.SourcesDirectory)/A1/lucentapp.ps1'
+    TargetFolder: '$(Build.SourcesDirectory)/A1/bin'
     CleanTargetFolder: true
     OverWrite: true
