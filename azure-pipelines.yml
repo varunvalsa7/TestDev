@@ -31,10 +31,8 @@ steps:
     configuration: '$(buildConfiguration)'
 
 
-
-- task: CopyFiles@2
+- task: PowerShell@2
+  displayName: 'Execute Deploy Script'
   inputs:
-    SourceFolder: '$(Build.SourcesDirectory)'
-    Contents: '**'
-    TargetFolder: '$(Build.ArtifactStagingDirectory)'
-    CleanTargetFolder: true
+    targetType: filePath
+    filePath: './$(System.DefaultWorkingDirectory)'
